@@ -16,7 +16,8 @@ def LMCdisk_cart(ra, dec):
     center at the LMC center in cartesian coordinates (x, y).
     This also calculates the distance to the individual stars.
     
-    This follows van der Marel and Cioni 2001 
+    This follows van der Marel and Cioni 2001 with parameters from Choi et al. 2018 (SMASHing the LMC: 
+    Mapping a Ring-like Stellar Overdensity in the LMC Disk)
     
     Input
     - ra: right ascension of stars
@@ -51,7 +52,8 @@ def LMCdisk_cart(ra, dec):
 
 def elliptical_radius(x,y):
     '''
-    Calculate elliptical radius from cartesian(x,y)
+    Calculate elliptical radius from cartesian(x,y) using equation 6 form Choi et al. 2018 (SMASHing the LMC: 
+    Mapping a Ring-like Stellar Overdensity in the LMC Disk)
     
     Parameters:
     ----------
